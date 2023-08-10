@@ -1,0 +1,19 @@
+dataset: 
+  dir: 'data/input/'
+  map1: 'orebro.gfs.log'
+  map2: 'fr079-complete.gfs.log'
+laser:
+  max_range: 5
+map:
+  size: [100, 100]
+  resolution: 5
+  prob_occ: 0.75
+  log_odds_min: -10   # Min value for log odds clipping
+  log_odds_max: 10    # Max value for log odds clipping
+
+plot:
+  liveplot_speed: 0.001 # Live plot speed
+  lidar_alpha: 0.4 # Transperancy
+  lidar_color: 'r' # Red
+  robot_color: 'g' # Green
+  plot_output_filename: 'data/output/occupancy_plot.pdf'
